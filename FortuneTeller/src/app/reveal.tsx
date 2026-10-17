@@ -5,15 +5,18 @@ export default function RevealScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.headerText}>Here is your Fortune!</Text>
+      
       <Image
-        source={{ uri: 'https://encryptedtbn0.gstatic.com/images?q=tbn:ANd9GcQarJlqCxZ8swcgkDNWHV82hEdGeyV-koDS6xdYgr7oRAi_RYuhU5kWKr8&s=10' }}
+        source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarJlqCxZ8swegkDNWHV82hEdGeyV-koDS6xdYgr7oR.Ai_RYuhU5kWKr8&s=10' }}
         style={styles.image}
       />
+
       <View style={styles.fortuneBox}>
         <Text style={styles.fortuneText}>
           "You will solve a bug today by randomly deleting a single line of code that you didn't even write."
         </Text>
       </View>
+
       <Button
         title="Go Back"
         color="#06f706"
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
   image: {
     width: 250,
     height: 250,
-    borderRadius: 125,
+    borderRadius: 150,
     marginBottom: 40,
     marginTop: 10,
   },
